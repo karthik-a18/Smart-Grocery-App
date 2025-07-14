@@ -20,11 +20,11 @@ app.use(session({
   secret: 'supersecret',
   resave: false,
   saveUninitialized: false,
-  store: MongoStore.create({ mongoUrl: 'mongodb://localhost:27017/smartgrocery' }),
+  store: MongoStore.create({ mongoUrl: 'mongodb+srv://karthikaddagada:kArthik608@ipl.c7ayusk.mongodb.net/smartgrocerydb' }),
   cookie: { maxAge: 1000 * 60 * 60 * 24 } // 1 day
 }));
 
-mongoose.connect('mongodb://localhost:27017/smartgrocery')
+mongoose.connect('mongodb+srv://karthikaddagada:kArthik608@ipl.c7ayusk.mongodb.net/smartgrocerydb')
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.log(err));
 
