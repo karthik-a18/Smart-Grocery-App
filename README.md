@@ -11,8 +11,6 @@ Smart Grocery is a full-stack web application that helps users create a grocery 
 - 📱 Login via mobile number and OTP (12345 as demo OTP).
 - 🛒 View and manage cart items.
 - 🏬 Compare total prices across multiple grocery stores.
-- 🔐 Logout with auto-refresh.
-- 🎨 Clean and modern UI with Tailwind CSS.
 
 ---
 
