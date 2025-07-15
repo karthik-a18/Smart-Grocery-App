@@ -21,6 +21,8 @@ import potatoImg from './assets/potatoes.jpg';
 import tomatoImg from './assets/tomatoes.jpg';
 import fallbackImg from './assets/fallback.jpg'; // if you use fallback from src too
 
+const url='https://smart-grocery-app-eutp.onrender.com';
+
 axios.defaults.withCredentials = true;
 
 const getImageForItem = (name) => {
@@ -63,7 +65,7 @@ export default function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/items')
+    axios.get(url+"/data")
       .then(res => setItems(res.data))
       .catch(err => console.error('Failed to load items', err));
 
